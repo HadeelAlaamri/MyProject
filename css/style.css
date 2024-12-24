@@ -1,0 +1,307 @@
+/* تنسيق الصفحة */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(182, 126, 115, 0.3); /* لون لحمي متوسط مع الشفافية */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    margin: 30px 0;
+}
+
+header img {
+    width: 200px;
+    height: auto;
+    border-radius: 15px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: rgba(182, 126, 115, 0.8); /* لون لحمي متوسط */
+}
+
+p {
+    font-size: 1.2rem;
+    color: rgba(182, 126, 115, 0.7); /* تدرج لحمي متوسط */
+}
+
+nav {
+    background-color: rgba(182, 126, 115, 0.3); /* لون لحمي متوسط مع الشفافية */
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgba(182, 126, 115, 0.7); /* تدرج لحمي متوسط */
+    font-size: 1.1rem;
+}
+
+nav a:hover {
+    color: rgba(182, 126, 115, 1); /* تدرج لحمي متوسط عند التمرير */
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.card {
+    width: 200px;
+    padding: 20px;
+    border: 2px solid rgba(182, 126, 115, 0.5); /* حدود لحمي متوسط وشفافة */
+    border-radius: 15px;
+    text-align: center;
+    background-color: rgba(182, 126, 115, 0.2); /* خلفية لحمي متوسط مع الشفافية */
+    cursor: pointer; /* تغيير المؤشر إلى يد عند التمرير */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* إضافة تأثير الحركة والتظليل */
+    display: block;
+    text-decoration: none; /* إزالة الخط تحت النص */
+    color: inherit; /* الحفاظ على اللون الطبيعي */
+}
+
+.card:hover {
+    transform: scale(1.05); /* تكبير البطاقة قليلاً عند التمرير عليها */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* إضافة ظل لتحديد البطاقة عند التمرير */
+}
+
+.card h3 {
+    color: rgba(33, 33, 33, 0.9); /* نص داكن داخل البطاقة */
+}
+
+.card p {
+    color: rgba(33, 33, 33, 0.6); /* نص خفيف داخل البطاقة */
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: rgba(182, 126, 115, 0.3); /* خلفية لحمي متوسط مع الشفافية */
+}
+
+footer p {
+    font-size: 0.9rem;
+    color: rgba(182, 126, 115, 0.7); /* تدرج لحمي متوسط */
+}
+
+/* تنسيق الأيقونات في الـ footer */
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icon {
+    font-size: 1.8rem; /* حجم الأيقونات */
+    color: rgba(182, 126, 115, 0.8); /* لون لحمي متوسط */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon:hover {
+    color: rgba(182, 126, 115, 1); /* تغيير اللون عند التمرير */
+    transform: scale(1.2); /* تكبير الأيقونة عند التمرير */
+}
+
+.social-icon i {
+    font-size: 1.8rem; /* زيادة حجم الأيقونات */
+    color: rgba(182, 126, 115, 0.8); /* لحمي متوسط */
+}
+
+.social-icon:hover i {
+    color: rgba(182, 126, 115, 1); /* اللون عند التمرير */
+}
+
+/* تنسيق الأعضاء */
+.team-section {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-around; /* توزيع البطاقات بالتساوي */
+    gap: 20px; /* المسافة بين البطاقات */
+    flex-wrap: wrap; /* إذا كانت الشاشة صغيرة، تنتقل البطاقات للأسطر التالية */
+}
+
+.card {
+    width: 250px;
+    padding: 20px;
+    border: 2px solid rgba(182, 126, 115, 0.5); /* حدود لحمي متوسط وشفافة */
+    border-radius: 15px;
+    background-color: rgba(182, 126, 115, 0.2); /* خلفية لحمي متوسط مع الشفافية */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* إضافة ظل لتحديد البطاقة */
+}
+
+.team-image {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    color: rgba(182, 126, 115, 0.8); /* تدرج لحمي متوسط */
+}
+
+.card .role {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.card p.description {
+    color: rgba(33, 33, 33, 0.6);
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: rgba(182, 126, 115, 0.3); /* خلفية لحمي متوسط مع الشفافية */
+}
+
+footer p {
+    font-size: 0.9rem;
+    color: rgba(182, 126, 115, 0.7); /* تدرج لحمي متوسط */
+}
+/* تنسيق الصورة مع الحركة */
+@keyframes logoAnimation {
+    0% {
+        transform: scale(0); /* البداية من حجم صفر */
+        opacity: 0; /* الشفافية 0 في البداية */
+    }
+    100% {
+        transform: scale(1); /* تكبير الصورة للحجم الطبيعي */
+        opacity: 1; /* جعل الصورة مرئية */
+    }
+}
+
+.logo {
+    animation: logoAnimation 1s ease-out; /* 1 ثانية مع تأثير الحركة */
+}
+body {
+    background-image: url('https://media.gemini.media/img/large/2018/7/10/2018_7_10_11_25_57_488.jpg');
+    background-size: cover; /* تجعل الصورة تغطي كامل الصفحة */
+    background-repeat: no-repeat; /* تمنع تكرار الصورة */
+    background-attachment: fixed; /* تجعل الخلفية ثابتة عند التمرير */
+}
+body, h1, h3, p, a, li {
+    font-weight: 900; /* أغمق درجات الخط */
+    color: #000; /* يجعل النصوص سوداء تماماً */
+}
+/* النصوص العامة */
+body {
+    color: #2b2b2b; /* لون نص غامق لجميع النصوص */
+}
+
+/* عنوان الصفحة */
+header h1 {
+    color: #1a1a1a; /* لون نص غامق أكثر للعنوان */
+}
+
+/* الفقرات */
+header p, .card p, footer p {
+    color: #333333; /* نصوص غامقة في كل مكان */
+}
+
+/* الروابط */
+nav ul li a {
+    color: #1a1a1a; /* روابط بلون غامق */
+}
+
+nav ul li a:hover {
+    color: #000000; /* نص غامق أكثر عند التمرير */
+}
+
+/* نصوص البطاقات */
+.card h3 {
+    color: #1a1a1a; /* لون نص غامق للعناوين داخل البطاقات */
+}
+
+.card p {
+    color: #2b2b2b; /* نصوص غامقة للباقي */
+}
+
+/* الفوتر */
+footer {
+    color: #2b2b2b; /* نصوص غامقة للفوتر */
+}
+
+footer svg {
+    fill: #333333; /* لون غامق للأيقونات */
+}
+
+footer svg:hover {
+    fill: #000000; /* غامق أكثر عند التمرير */
+}
+/* تنسيق جميع البطاقات */
+.card-container .card {
+    background-color: rgba(255, 204, 184, 0.8); /* لون لحمي فاتح شبه شفاف */
+    border-radius: 10px; /* زاوية دائرية للحواف */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* إضافة ظل خفيف حول البطاقة */
+    padding: 20px; /* إضافة مسافة داخلية */
+    text-align: center; /* محاذاة النص إلى المنتصف */
+    color: #2b2b2b; /* نص غامق داخل البطاقة */
+    transition: all 0.3s ease; /* إضافة انتقال عند التمرير */
+}
+
+/* تغيير لون النص داخل البطاقة */
+.card-container .card h3 {
+    color: #1a1a1a; /* نص غامق للعناوين */
+}
+
+/* تغيير لون النص عند التمرير على البطاقة */
+.card-container .card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* تغيير الظل عند التمرير */
+    transform: scale(1.05); /* تكبير البطاقة قليلاً عند التمرير */
+}
+/* تنسيق جميع بطاقات فريق العمل */
+.team-card-container .team-card {
+    background-color: rgba(255, 204, 184, 0.8); /* لون لحمي فاتح شبه شفاف */
+    border-radius: 10px; /* زاوية دائرية للحواف */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* إضافة ظل خفيف حول البطاقة */
+    padding: 20px; /* إضافة مسافة داخلية */
+    text-align: center; /* محاذاة النص إلى المنتصف */
+    color: #2b2b2b; /* نص غامق داخل البطاقة */
+    transition: all 0.3s ease; /* إضافة انتقال عند التمرير */
+}
+
+/* تنسيق البطاقات الخاصة بفريق العمل */
+.team-member.card {
+    background-color: rgba(255, 204, 184, 0.8); /* لون لحمي فاتح شبه شفاف */
+    border-radius: 10px; /* زاوية دائرية للحواف */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* إضافة ظل خفيف حول البطاقة */
+    padding: 20px; /* إضافة مسافة داخلية */
+    text-align: center; /* محاذاة النص إلى المنتصف */
+    color: #2b2b2b; /* نص غامق داخل البطاقة */
+    transition: all 0.3s ease; /* إضافة انتقال عند التمرير */
+    margin: 10px; /* إضافة مسافة بين البطاقات */
+}
+
+/* تغيير لون النص داخل بطاقة فريق العمل */
+.team-member.card h3 {
+    color: #1a1a1a; /* نص غامق للعناوين */
+}
+
+/* تغيير لون النص عند التمرير على بطاقة فريق العمل */
+.team-member.card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* تغيير الظل عند التمرير */
+    transform: scale(1.05); /* تكبير البطاقة قليلاً عند التمرير */
+}
